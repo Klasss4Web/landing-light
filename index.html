@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing light</title>
+    <!----------------Favicon------------------------->
+    <link rel="shortcut icon" href="./assets/PremierOrangeOfferCard.png" type="image/x-icon">
+    <!---------------Font Awesome--------------------->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!---------------External Stylesheet-------------->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="container navbar-container">
+        <nav>
+          <ul>
+            <li><a href="#">TRIPS</a></li>
+            <li><a href="#">RECENTLY VIEWED</a></li>
+            <li><a href="#">BOOKINGS</a></li>
+            <li class="personal-account">
+              <a href="#"><img src="./assets/images_9.jpeg" alt="account holder picture"></a>
+            </li>
+          </ul>        
+        </nav>
+      </div>
+    </header>
+    <main id="main-section">
+      <div class="payment container flex-container">
+        <div class="payment_card-type">
+          <h2>Payment Information</h2>
+          <h4>Choose your method of payment</h4>
+          <div class="credit-card">
+            <img src="./assets/PremierOrangeOfferCard.png" alt="orange coloured credit card">
+          </div>
+        </div>
+        <div class="payment_card-informations">
+          <form action="#">
+            <div class="icon-container">
+              <i class="fab fa-cc-visa visa-icon"></i>
+              <img class="discover-icon" src="./assets/discover.png">
+              <img class="paypal-icon" src="./assets/_Paypal-39-512.png">
+            </div>
+            <div class="flex-container">
+              <div class="gutter">
+                <label for="card-details">Credit Card Number</label><br>
+                <input type="text" name="card-details" id="card-details" placeholder="4324 5433 9382 1030"><br>
+                <label for="security-code">Security Code</label><br>
+                <input type="text" name="security-code" id="security-code" placeholder="420"><br>
+                <input type="radio" checked name="save-card-details" id="save-card-details">
+                <label for="save-card-details">Use this card for the next purchase</label>
+              </div>
+              <div class="gutter">
+                <label for="expiration-date">Expiration Date</label><br>
+                <input type="date" name="expiration-date" id="expiration-date" placeholder="03/24"><br>
+                <label for="postal-code">Postal Code</label><br>
+                <input type="number" name="postal-code" id="postal-code" placeholder="10119">
+              </div>
+            </div>
+            <div>
+              <button class="btn btn-add-card">Add Card</button> 
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="payment-total container">
+        <div class="payment-breakdown">
+          <h3>Subtotal</h3>
+          <h3 class="top-bottom-margin">Estimated Tax</h3>
+          <h3>Promotional Code: <span>Z4KXLM9A</span></h3>
+        </div>
+        <div class="payment-figures">
+          <h3>₦2,497.00</h3>
+          <h3 class="top-bottom-margin">₦119.64</h3>
+          <h3>₦-60.00</h3>
+        </div>
+      </div>
+      <div class="payment-total container">
+        <div class="payment-breakdown">
+          <button class="btn btn-complete-payment">Complete payment</button>
+        </div>
+        <div class="payment-figures payment-figures_total">
+          <h3>Total: ₦2556.64</h3>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
